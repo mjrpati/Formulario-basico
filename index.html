@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Cadastre seu desapego e o venda mais rápido!</h3>
+        </div>
+        <div class="form-container">
+        <div class="form-header">
+        <p>Cadastro</p>
+          </div>
+          <div class="form-body">
+            <h1 class="form-title">Venda fácilmente seu celular!</h1>
+            <p>Descreva todas as características do seu celular e marque todos as categorias
+                e características que ele possui</p>
+                <!--Form determina o local do formulario-->
+                <form>
+                    <div class="box-input">
+                        <label for="title">Título do anúncio
+                            <span class="required-field">*</span>
+                        </label>
+                        <input type="text" name="title" id="title" class="block"
+                        placeholder="Defina um titulo para seu desapego"
+                        minlength="1" maxlength="35" required>
+                        <!--LEMBRETE PARA QUANDO EU VOLTAR, ESTA PARTE DE CIMA É REFENTE A FORMULARIOS, FZER PARTE DOIS ACABANDO HTML
+                        QUERO FAZER UMA PAGINA DE DESAPEGO E NÃO DE CARROS IGUAL NO VIDEO, ELABORAR MELHOR O PROJETO ULT ATT 20/10-->
+                    </div>
+                    <div class="box-input">
+                        <label for="price">Valor do seu desapego:
+                        <span class="required-field">*</span>
+                    </label>
+                        <input type="number" id="price" name="price" class="block" required>
+                        <div class="box-input">
+                            <label for="description">Descreva seu produto:
+                            <span class="required-field">*</span>
+                        </label>
+                        <textarea
+                           id=textarea
+                           class="block"
+                           name="description"
+                           cols="30"
+                           rows="10"
+                           required
+                           placeholder="Descreva em detalhes informações sobre o seu produto"
+                        ></textarea>
+                        </div>
+                        <div class="box-input">
+                            <label for="brand-new">O produto está funcionando?
+                               <span class="required-file">*</span>
+                              </label>
+                            <select id="second-hand" name="second-hand" required>
+                                <option value="">Selecione uma das opções abaixo:</option>
+                                <option value="1">Produto funcionando</option>
+                                <option value="0">Retirada de peças</option>
+                            </select>
+                               
+                                </label>
+                                </label>
+                            <div class="box-input">
+                                <label for="purchase-date">Data do anúncio?
+                               <span class="required-field">*</span>
+                               <input
+                               type="date"
+                               name="purchase-date"
+                               id="purchase-date"
+                               class="block"
+                               required
+                               >
+                                </label>
+                                <div class="box-input">
+                                    <p>O produto é: <span class="required-field">*</span></p>
+                                    <input type="radio" id="second-hand" name="conservation">
+                                    <label for="second-hand">Usado</label>
+                                    <input type="radio" id="brand-new" name="conservation">
+                                    <label for="brand-new">Novo</label>
+                                    <!--Name precisa ser o mesmo, pois senão o usúario pode marcar quantas opções quiser-->
+                                </div>
+                                <div class="optional-box">
+                                    <p>Marca <span class="required-field">*</span></p>
+                                    <ul class="brand-list">
+                                        <li>  <input type="radio" id="brand-nokia" name="optional" value="Nokia">
+                                            <label for="Nokia">Nokia</label>
+                                        </li>
+                                        <li>  <input type="radio" id="brand-motorola" name="optional" value="Motorola">
+                                                <label for="Nokia">Motorola</label>
+                                        <li>  <input type="radio" id="brand-Apple" name="optional" value="Apple">
+                                                <label for="Nokia">Apple</label>
+                                        <li>  <input type="radio" id="brand-Lg" name="optional" value="lg">
+                                                <label for="lg">LG</label>
+                                        <li>  <input type="radio" id="brand-nokia" name="optional" value="Nokia">
+                                                <label for="Nokia">Nokia</label>
+                                        <li>  <input type="radio" id="brand-Samsung" name="optional" value="Samsung">
+                                                    <label for="Nokia">Samsung</label>
+                                         <li>  <input type="radio" id="brand-xiaomi" name="optional" value="xiaomi">
+                                                        <label for="Nokia">Xiaomi</label>
+                                        <li>  <input type="radio" id="another-brand" name="optional" value="another-brand">
+                                                            <label for="another-brand">Outros</label>
+
+                                                    </li>
+                                                </li>
+
+                                                    </li>
+                                                </li>
+                                            </li>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="box-input">
+                                    <label for="title">Outra marca:
+                                    </label>
+                                    <input type="text" name="another-brand" id="another-brand" class="block"
+                                    placeholder="Digite o nome da marca"
+                                    minlength="1" maxlength="100">
+                                    <input type="submit" class="btn-submit" value="Cadastrar">
+                                </div>
+                                <div class="box-input">
+                                    <p>Envie algumas imagens do seu aparelho <span class="required-file">*</span></p>
+                                    <input
+                                    type="file"
+                                    multiple accept="image/png, image/jpeg"
+                                    id="images"
+                                    name="images"
+                                    required
+                                    >
+                                </div>
+
+
+                            </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form> 
+            </p>
+          </div>
+        </div>
+    </div>
+ 
+</body>
+</html>
